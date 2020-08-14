@@ -1,0 +1,7 @@
+GET : Endpoint'e (url) göre belli verileri alır.
+
+Post : Endpoint'e göre belli bir veriyi gönderir
+
+Put : veriyi günceller
+
+Delete : veriyi siler

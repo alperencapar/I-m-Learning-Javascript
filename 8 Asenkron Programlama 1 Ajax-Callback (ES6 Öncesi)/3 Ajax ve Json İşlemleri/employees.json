@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Alperen Çapar",
+        "department": "Bilişim",
+        "salary": 3000
+
+    },
+
+    {
+        "name": "Aykut Parlak",
+        "department": "Bilişim",
+        "salary": 4000
+        
+    },
+
+    {
+        "name": "Emre Övüş",
+        "department": "Pazarlama",
+        "salary": 5000
+        
+    }
+]
