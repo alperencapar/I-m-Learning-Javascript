@@ -2,6 +2,10 @@
 
 // POST - API'a bilgi gönderme
 
+// PUT - içerik var ise gelen veriler ile değiştirilir , eğer içerik yok ise yeni içerik yaratılır. Server'a dosya bazlı içerikler göndermek için tercih edilir
+//https://www.fibiler.com/HTTP-metodlarindan-POST-ile-PUT-Arasindaki-Fark_Veri_12562
+
+
 class Request{
 
     constructor(){
@@ -21,7 +25,6 @@ class Request{
             }
         }
 
-
         this.xhr.send();
     }
 
@@ -31,7 +34,7 @@ class Request{
 
         this.xhr.setRequestHeader("Content-type","application/json")    //API'a göndereceğimiz bilginin tipini belirtmemiz gerekiyor
         //https://www.w3schools.com/js/js_ajax_http_send.asp
-        
+
 
         this.xhr.onload = () =>{
             //https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
@@ -45,10 +48,39 @@ class Request{
                 callback("POST REQUEST HATASI!",null);
             }
 
+
         }
 
         this.xhr.send(JSON.stringify(data));
     }
+
+
+    put(url,data,callback){
+
+        this.xhr.open("PUT",url);
+
+        this.xhr.setRequestHeader("Content-type","application/json")    //API'a göndereceğimiz bilginin tipini belirtmemiz gerekiyor
+        
+
+
+        this.xhr.onload = () =>{
+                       
+            if (this.xhr.status === 200){
+                callback(null,this.xhr.responseText);
+            }
+
+            else{
+                callback("PUT REQUEST HATASI!",null);
+            }
+
+        }
+
+        this.xhr.send(JSON.stringify(data));
+    
+
+    }
+
+
 
 }
 
@@ -75,7 +107,21 @@ const request = new Request();
 
 
 
-request.post("https://jsonplaceholder.typicode.com/albums",{userId:2,title:"Thriller"},function(err,album){
+// request.post("https://jsonplaceholder.typicode.com/albums",{userId:2,title:"Thriller"},function(err,album){
+
+// if(err === null){
+//     console.log(album)
+
+// }
+// else{
+//     console.log(err);
+// }
+
+// });
+
+
+
+request.put("https://jsonplaceholder.typicode.com/albums/10",{userId:143,title:"Ekin Beril Dualite"},function(err,album){
 
 if(err === null){
     console.log(album)
