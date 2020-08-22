@@ -1,4 +1,5 @@
 
+
 # Attention, this repo still not finished
 
   
@@ -55,13 +56,15 @@
 
 * Asynchronous Programming - Promise,Fetch (ES6)
 
+* Asynchronous Programming - Async,Await (ES7)
+
 
 
 ---
 ### will be added:
 
 
- * [ ] Asynchronous Programming - Async,Await (ES7)
+ * [x] Asynchronous Programming - Async,Await (ES7)
  * [ ] Yandex Translate API
 
  
