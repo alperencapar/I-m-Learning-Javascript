@@ -4,7 +4,7 @@
 
   
 
-### I have collected all codes that i write while i've learning JS. Description lines and some variable names are Turkish
+### I have collected all codes that i write while i've learning JS. Description lines and some variable names are Turkish, excluding examples(apps) 
 
   
 
@@ -12,7 +12,7 @@
 
   
 
-* I created this repo because when i want to remember something that i worked before
+* I created this repo because when i want to remember something that i worked(studied) before
 
   
 
@@ -58,6 +58,9 @@
 
 * Asynchronous Programming - Async,Await (ES7)
 
+* Exchange Rate API(ES7)
+
+* Github API(ES7)
 
 
 ---
@@ -65,6 +68,7 @@
 
 
  * [x] Asynchronous Programming - Async,Await (ES7)
- * [ ] Yandex Translate API
+ * [x] Exchange Rate API
+ * [x] Github API
 
  
